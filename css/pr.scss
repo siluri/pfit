@@ -1,11 +1,13 @@
 $lila: #8B185D;
 
 body {
-  background-color: whitesmoke;
 }
 
 .container {
   background-color: white;
+  h2 {
+    color: $lila;
+  }
 }
 
 .navbar-default {
@@ -28,7 +30,6 @@ body {
 }
 #social {
   img {
-    max-width: 50px;
     margin: auto;
   }
 }
@@ -48,8 +49,8 @@ body {
 }
 
 .card {
-  padding: 20px;
   margin-bottom: 30px;
+  margin-top: 30px;
   background-color: white;
   .glyphicon {
     font-size: 40px;
@@ -57,9 +58,15 @@ body {
   .card-body {
     .card-title {
       height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .card-text{
-      height: 80px;
+      height: 100px;
+      text-align: initial;
+      margin: auto;
+      max-width: 300px;
     }
   }
   .card-footer {
@@ -69,6 +76,15 @@ body {
       p {
         text-align: justify;
       }
+    }
+  }
+}
+
+#preise {
+  .kilometer {
+    text-align: right;
+    p {
+      font-size: 10px;
     }
   }
 }
