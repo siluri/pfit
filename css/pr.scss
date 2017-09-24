@@ -36,7 +36,11 @@ body {
 #logo {
   position: relative;
   img {
-    background-image: url("/images/paper.png");
+    background: url("/images/paper.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 }
 
@@ -86,5 +90,80 @@ body {
     p {
       font-size: 10px;
     }
+  }
+}
+
+#myFooter {
+  background-color: #373a48;
+  color:white;
+  .container {
+    background-color: transparent;
+    a{
+      margin-right: 5px;
+      margin-left: 5px;
+      color: #f9f9f9;
+      padding: 10px;
+      transition: 0.2s;
+    }
+    a:hover{
+      text-decoration: none;
+    }
+  }
+  .footer-copyright{
+    background-color: #383737;
+    padding-top:3px;
+    padding-bottom:3px;
+    text-align: center;
+    p{
+      margin:10px;
+      color: #ccc;
+    }
+  }
+  ul{
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+
+  }
+
+  h5{
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+  }
+
+  a{
+    color:#d2d1d1;
+    text-decoration: none;
+  }
+  .myCols{
+    text-align: center;
+  }
+
+  .social-networks{
+    padding-top: 4px;
+    background-color: $lila;
+  }
+  a:hover, a:focus{
+    text-decoration: none;
+    color:white;
+  }
+}
+
+#myFooter .facebook:hover{
+  color:#0077e2;
+}
+
+#myFooter .google:hover{
+  color:#ef1a1a;
+}
+
+#myFooter .twitter:hover{
+  color: #00aced;
+}
+
+@media screen and (max-width: 767px){
+  #myFooter {
+    text-align: center;
   }
 }
