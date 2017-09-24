@@ -33,10 +33,14 @@ $(function () {
          */
         if (mail) {
             if (mail.match(mailregex) !== null) {
-                $('#mailicon').removeClass('text-danger');
+                $('#mailicon').removeClass('text-danger')
+                    .removeClass('glyphicon-warning-sign')
+                    .addClass('glyphicon-user');
                 mailvalid = true;
             } else {
-                $('#mailicon').addClass('text-danger');
+                $('#mailicon').addClass('text-danger')
+                    .addClass('glyphicon-warning-sign')
+                    .removeClass('glyphicon-user');
                 console.error("das ist keine mail Adresse");
             }
         } else {
@@ -48,10 +52,14 @@ $(function () {
          * Messagevalidation
          */
         if (msg && msg.length > textlength) {
-            $('#texticon').removeClass('text-danger');
+            $('#texticon').removeClass('text-danger')
+                .removeClass('glyphicon-warning-sign')
+                .addClass('glyphicon-align-left');
             textvalid = true;
         } else {
-            $('#texticon').addClass('text-danger');
+            $('#texticon').addClass('text-danger')
+                .addClass('glyphicon-warning-sign')
+                .removeClass('glyphicon-align-left');
             console.error("Der Text ist nicht lange genug");
         }
 

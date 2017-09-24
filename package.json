@@ -32,7 +32,6 @@
     "webpack": "^1.12.14",
     "webpack-dev-server": "^1.14.1"
   },
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/siluri/pfit.git"
@@ -40,5 +39,8 @@
   "bugs": {
     "url": "https://github.com/siluri/pfit/issues"
   },
-  "homepage": "https://github.com/siluri/pfit#readme"
+  "homepage": "https://github.com/siluri/pfit#readme",
+  "dependencies": {
+    "bootstrap-social": "^5.1.1"
+  }
 }
