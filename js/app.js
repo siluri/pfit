@@ -5,6 +5,26 @@ import 'waypoints';
 import 'scrollTo';
 
 $(function () {
+    function loadCSS(href){
+        var ss = window.document.createElement('link'),
+            ref = window.document.getElementsByTagName('head')[0];
+
+        ss.rel = 'stylesheet';
+        ss.href = href;
+
+        // temporarily, set media to something non-matching to ensure it'll
+        // fetch without blocking render
+        ss.media = 'only x';
+
+        ref.parentNode.insertBefore(ss, ref);
+
+        setTimeout( function(){
+            // set media back to `all` so that the stylesheet applies once it loads
+            ss.media = 'all';
+        },0);
+    }
+    loadCSS('build/style.css');
+
     var mailregex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     $('[id^=scrollTo]').click(function () {
         var id = $(this).attr('id').slice(9);
