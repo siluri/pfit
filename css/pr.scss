@@ -40,24 +40,32 @@ body, html {
 .spacer-navbar {
   height: 50px;
 }
+
 #social {
-  img {
+  .centered {
     margin: auto;
+    max-width: 50px;
+  }
+  a {
+    font-size: 60px;
   }
 }
+
 #logo {
   position: relative;
+  background: url("/images/paper.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   img {
-    background: url("/images/paper.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    max-width: 1024px;
+    margin: auto;
   }
 }
 
 .top-buffer {
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 #leistungen.container, #kontakt .container {
@@ -106,14 +114,19 @@ body, html {
 }
 
 #myFooter {
-  background-color: #373a48;
+  background-color: lightgray;
   color:white;
+  .logo {
+    margin-top: 13px;
+    margin-bottom: 5px;
+    max-width: 90px;
+  }
   .container {
     background-color: transparent;
     a{
       margin-right: 5px;
       margin-left: 5px;
-      color: #f9f9f9;
+      color: #383737;
       padding: 10px;
       transition: 0.2s;
     }
