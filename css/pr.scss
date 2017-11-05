@@ -4,21 +4,20 @@ body, html {
   height: 100%;
 }
 
-.leistung_akkupressur, .leistung_blutegel, .leistung_dehnung, .leistung_dry-needling, .leistung_jack,
-.leistung_massage, .leistung_stresspunkt {
+.leistung_mobilisation, .leistung_blutegel, .leistung_akkupressur, .leistung_dehnung, .leistung_dry-needling,
+.leistung_jack, .leistung_massage {
   display: inline-block;
   background: url('/images/leistung/leistung.jpeg') no-repeat;
   overflow: hidden; text-indent: -9999px; text-align: left;
 }
 
-
-.leistung_akkupressur { background-position: -0px -0px; width: 300px; height: 235px; }
-.leistung_blutegel { background-position: -0px -235px; width: 300px; height: 366px; }
-.leistung_dehnung { background-position: -0px -601px; width: 300px; height: 234px; }
-.leistung_dry-needling { background-position: -0px -835px; width: 300px; height: 186px; }
-.leistung_jack { background-position: -0px -1021px; width: 300px; height: 200px; }
-.leistung_massage { background-position: -0px -1221px; width: 300px; height: 200px; }
-.leistung_stresspunkt { background-position: -0px -1421px; width: 200px; height: 300px; }
+.leistung_dry-needling { background-position: -0px -0px; width: 323px; height: 200px; }
+.leistung_jack { background-position: -0px -200px; width: 300px; height: 200px; }
+.leistung_massage { background-position: -0px -400px; width: 300px; height: 200px; }
+.leistung_mobilisation { background-position: -0px -600px; width: 300px; height: 200px; }
+.leistung_dehnung { background-position: -0px -800px; width: 256px; height: 200px; }
+.leistung_akkupressur { background-position: -0px -1000px; width: 255px; height: 200px; }
+.leistung_blutegel { background-position: -0px -1200px; width: 235px; height: 200px; }
 
 .imgkreis {
   border-radius: 50%;
@@ -184,7 +183,7 @@ img.profil {
   }
   .footer-copyright{
     background-color: #383737;
-    padding-top:3px;
+    padding-top:15px;
     padding-bottom:3px;
     text-align: center;
     p{
@@ -263,15 +262,20 @@ img.profil {
   color: #cd486b;
 }
 
+.streifen {
+  background-color: $lila;
+  height: 3px;
+  width: 100%;
+}
+
 .social_btns {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   a {
     padding-right: 3%;
     padding-left: 3%;
   }
 }
-
 
 @media screen and (max-width:640px) {
   .parallax, #logo{
