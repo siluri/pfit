@@ -19,6 +19,11 @@ body, html {
 .leistung_akkupressur { background-position: -0px -1000px; width: 255px; height: 200px; }
 .leistung_blutegel { background-position: -0px -1200px; width: 235px; height: 200px; }
 
+.leistung_leer {
+  height: 200px;
+  width: 300px;
+}
+
 .imgkreis {
   border-radius: 50%;
 }
