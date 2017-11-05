@@ -86,16 +86,6 @@ img.profil {
   height: 50px;
 }
 
-#social {
-  .centered {
-    margin: auto;
-    max-width: 50px;
-  }
-  a {
-    font-size: 60px;
-  }
-}
-
 #logo {
   position: relative;
   background: url("/images/paper.jpg") no-repeat center center fixed;
@@ -115,6 +105,17 @@ img.profil {
 
 #leistungen.container, #kontakt .container {
   background-color: transparent;
+}
+
+#verena .person {
+  > div {
+    margin-right: 10px;
+  }
+  a {
+    &:hover {
+      text-decoration: none !important;
+    }
+  }
 }
 
 .card {
@@ -260,6 +261,15 @@ img.profil {
 }
 .fa-instagram {
   color: #cd486b;
+}
+
+.social_btns {
+  display: flex;
+  justify-content: center;
+  a {
+    padding-right: 3%;
+    padding-left: 3%;
+  }
 }
 
 
