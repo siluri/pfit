@@ -4,6 +4,17 @@ body, html {
   height: 100%;
 }
 
+.leistung_akkupressur, .leistung_dehnung, .leistung_dry-needling, .leistung_stresspunkt {
+  display: inline-block;
+  background: url('/images/leistung/leistung.jpeg') no-repeat;
+  overflow: hidden; text-indent: -9999px; text-align: left;
+}
+
+.leistung_akkupressur { background-position: -0px -0px; width: 300px; height: 235px; }
+.leistung_dehnung { background-position: -0px -235px; width: 300px; height: 234px; }
+.leistung_dry-needling { background-position: -0px -469px; width: 300px; height: 186px; }
+.leistung_stresspunkt { background-position: -0px -655px; width: 200px; height: 300px; }
+
 .imgkreis {
   border-radius: 50%;
 }
@@ -14,20 +25,20 @@ body, html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  &.tunnel{
-    background-image: url("/images/pferde_tunnel-min.jpg");
+  &.para_tunnel{
+    background-image: url("/images/parallax/tunnel.jpg");
     height: 380px;
   }
-  &.kuschel{
-    background-image: url("/images/kuschel-min.jpg");
+  &.para_kuschel{
+    background-image: url("/images/parallax/kuschel.jpg");
     height: 380px;
   }
-  &.blick{
-    background-image: url("/images/tieferblick-min.jpg");
+  &.para_tieferblick{
+    background-image: url("/images/parallax/tieferblick.jpg");
     height: 450px;
   }
-  &.partner{
-    background-image: url("/images/partner-min.jpg");
+  &.para_partner{
+    background-image: url("/images/parallax/partner.jpg");
     height: 450px;
   }
 }
