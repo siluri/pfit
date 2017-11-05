@@ -261,3 +261,11 @@ img.profil {
 .fa-instagram {
   color: #cd486b;
 }
+
+
+@media screen and (max-width:640px) {
+  .parallax, #logo{
+    background-attachment: initial !important;
+    background-position: center center !important;
+  }
+}
