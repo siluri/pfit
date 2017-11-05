@@ -4,16 +4,21 @@ body, html {
   height: 100%;
 }
 
-.leistung_akkupressur, .leistung_dehnung, .leistung_dry-needling, .leistung_stresspunkt {
+.leistung_akkupressur, .leistung_blutegel, .leistung_dehnung, .leistung_dry-needling, .leistung_jack,
+.leistung_massage, .leistung_stresspunkt {
   display: inline-block;
   background: url('/images/leistung/leistung.jpeg') no-repeat;
   overflow: hidden; text-indent: -9999px; text-align: left;
 }
 
+
 .leistung_akkupressur { background-position: -0px -0px; width: 300px; height: 235px; }
-.leistung_dehnung { background-position: -0px -235px; width: 300px; height: 234px; }
-.leistung_dry-needling { background-position: -0px -469px; width: 300px; height: 186px; }
-.leistung_stresspunkt { background-position: -0px -655px; width: 200px; height: 300px; }
+.leistung_blutegel { background-position: -0px -235px; width: 300px; height: 366px; }
+.leistung_dehnung { background-position: -0px -601px; width: 300px; height: 234px; }
+.leistung_dry-needling { background-position: -0px -835px; width: 300px; height: 186px; }
+.leistung_jack { background-position: -0px -1021px; width: 300px; height: 200px; }
+.leistung_massage { background-position: -0px -1221px; width: 300px; height: 200px; }
+.leistung_stresspunkt { background-position: -0px -1421px; width: 200px; height: 300px; }
 
 .imgkreis {
   border-radius: 50%;
@@ -33,12 +38,20 @@ body, html {
     background-image: url("/images/parallax/kuschel.jpg");
     height: 380px;
   }
+  &.para_idni{
+    background-image: url("/images/parallax/idni.jpg");
+    height: 380px;
+  }
   &.para_tieferblick{
     background-image: url("/images/parallax/tieferblick.jpg");
     height: 450px;
   }
   &.para_partner{
     background-image: url("/images/parallax/partner.jpg");
+    height: 450px;
+  }
+  &.para_behandlung{
+    background-image: url("/images/parallax/behandlung.jpg");
     height: 450px;
   }
 }
