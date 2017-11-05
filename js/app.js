@@ -2,13 +2,12 @@ import '../css/app.scss';
 import $ from "jquery";
 import '../node_modules/bootstrap/dist/js/bootstrap.min.js';
 import 'waypoints';
-import 'scrollTo';
 
 $(function () {
     var mailregex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     $('[id^=scrollTo]').click(function () {
         var id = $(this).attr('id').slice(9);
-        $(window).scrollTo($('#' + id), 1000, {offset: {top: -70, left: 0}});
+        $('html, body').animate({ scrollTop: ($('#' + id).offset().top - 70)}, 'slow');
     });
 
     $('.nav a').on('click', function () {

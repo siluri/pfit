@@ -28,7 +28,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-16948267-11"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments)};
+        function gtag(){dataLayer.push(arguments)}
         gtag('js', new Date());
         gtag('config', 'UA-16948267-11');
     </script>
@@ -90,32 +90,46 @@
         </div>
     </div>
 
-    <!-- Wiese -->
-    <div id="wiese" class="top-buffer">
-        <div class="parallax wiese"></div>
+    <!-- Parallax Bild Tunnel -->
+    <div id="parabild_tunnel" class="top-buffer">
+        <div class="parallax tunnel"></div>
     </div>
 
     <!-- Über mich -->
     <div id="verena" class="top-buffer">
         <div class="container">
             <h2>Über mich <i class="fa fa-user-o" aria-hidden="true"></i></h2>
-            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
-            <br>
-            <div itemscope itemtype="http://schema.org/Person" class="pull-right text-right">
-                <div itemprop="name"><i class="fa fa-address-card-o" aria-hidden="true"></i> <strong>Verena Poschenrieder</strong></div>
-                <address  itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                    <span itemprop="email">verena@pferde.fit</span><br>
-                    <span itemprop="postalCode">93152</span> <span itemprop="addressLocality">Nittendorf</span><br>
-                    Tel: <span itemprop="telephone">0170 486 4779</span>
-                </address>
+            <div class="row">
+                <div class="col-sm-4 col-md-4">
+                    <img class="profil img-responsive center-block" src="/images/profil-min.jpg" alt="Profilbild Verena Poschenrieder - Pferdephysiotherapeutin - pferde.fit">
+                </div>
+                <div class="col-sm-8 col-md-8">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+                </div>
             </div>
             <br>
-            <blockquote>
-                <p>Wenn der Mensch denkt, dass das Pferd nicht fühlt, muss das Pferd fühlen, dass der Mensch nicht denkt.</p>
-                <footer><cite title="Source Title">unbekannt</cite></footer>
-            </blockquote>
+            <div class="row">
+                <div itemscope itemtype="http://schema.org/Person" class="pull-right text-right">
+                    <div itemprop="name"><i class="fa fa-address-card-o" aria-hidden="true"></i> <strong>Verena Poschenrieder</strong></div>
+                    <address  itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                        <span itemprop="email">verena@pferde.fit</span><br>
+                        <span itemprop="postalCode">93152</span> <span itemprop="addressLocality">Nittendorf</span><br>
+                        Tel: <span itemprop="telephone">0170 486 4779</span>
+                    </address>
+                </div>
+                <br>
+                <blockquote>
+                    <p>Wenn der Mensch denkt, dass das Pferd nicht fühlt, muss das Pferd fühlen, dass der Mensch nicht denkt.</p>
+                    <footer><cite title="Source Title">unbekannt</cite></footer>
+                </blockquote>
+            </div>
             <br>
         </div>
+    </div>
+
+    <!-- Parallax tiefer  Blick -->
+    <div id="parabild_blick" class="top-buffer">
+        <div class="parallax blick"></div>
     </div>
 
     <!-- Probleme -->
@@ -164,6 +178,11 @@
         </div>
     </div>
 
+    <!-- Parallax Partner -->
+    <div id="parabild_partner" class="top-buffer">
+        <div class="parallax partner"></div>
+    </div>
+
     <!-- Leistungen -->
     <div id="dienstleistungen" class="top-buffer">
         <div class="container">
@@ -173,7 +192,8 @@
                     <!-- Dehnungen und Mobilisation -->
                     <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="card">
-                            <span class="glyphicon glyphicon-move"></span>
+                            <img src="/images/leistung/mobilisation-min.jpg" alt="Dehnungen und Mobilisation">
+                            <!-- <span class="glyphicon glyphicon-move"></span> -->
                             <div class="card-body">
                                 <h4 class="card-title">Dehnungen und Mobilisation</h4>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
@@ -188,7 +208,8 @@
                     <!-- Akkupressur -->
                     <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="card">
-                            <span class="glyphicon glyphicon-alert"></span>
+                            <img src="/images/leistung/akkupressur-min.jpg" alt="Akkupressur">
+                            <!-- <span class="glyphicon glyphicon-alert"></span> -->
                             <div class="card-body">
                                 <h4 class="card-title">Akupressur</h4>
                                 <p class="card-text">Die Akupressur, ist ein prophylaktisch und therapeutisch angewandtes Heilverfahren, bei dem auf den Körper stumpfer Druck an definierten Stellen ausgeübt wird.</p>
@@ -203,6 +224,7 @@
                     <!-- Jack Meagher -->
                     <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="card">
+                            <!--<img src="/images/leistung/" alt=""> -->
                             <span class="glyphicon glyphicon-upload"></span>
                             <div class="card-body">
                                 <h4 class="card-title">Stresspunkmassage nach Jack Meagher</h4>
@@ -221,7 +243,8 @@
                     <!-- Dry Needling -->
                     <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="card">
-                            <span class="glyphicon glyphicon-pushpin"></span>
+                            <img src="/images/leistung/dry_needling-min.jpg" alt="Dry Needling">
+                            <!-- <span class="glyphicon glyphicon-pushpin"></span> -->
                             <div class="card-body">
                                 <h4 class="card-title">Dry Needling</h4>
                                 <p class="card-text">Dry Needling ist eine komplexe Behandlungsmethode für muskuläre Störungen des Pferdes, die von Andrea Schachinger entwickelt wurde.</p>
@@ -249,7 +272,8 @@
                     <!-- Lymphdrainage -->
                     <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="card">
-                            <span class="glyphicon glyphicon-download-alt"></span>
+                            <img src="/images/leistung/dehnung-min.jpg" alt="Lymphdrainage">
+                            <!-- <span class="glyphicon glyphicon-download-alt"></span> -->
                             <div class="card-body">
                                 <h4 class="card-title">Manuelle Lymphdrainage</h4>
                                 <p class="card-text">Die manuelle Lymphdrainage (MLD) ist eine spezielle Massagetechnik und bewirkt einen Abtransport von Lymphflüssigkeit aus dem Gewebe</p>
@@ -274,6 +298,7 @@
                     <!-- Blutegeltherapie -->
                     <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="card">
+                            <!-- <img src="/images/leistung/" alt="">-->
                             <span class="glyphicon glyphicon-tint"></span>
                             <div class="card-body">
                                 <h4 class="card-title">Blutegeltherapie</h4>
@@ -303,6 +328,7 @@
                     <!-- Massage -->
                     <div class="col-xs-12 col-sm-6 col-md-6">
                         <div class="card">
+                            <!-- <img src="/images/leistung/" alt=""> -->
                             <span class="glyphicon glyphicon-download-alt"></span>
                             <div class="card-body">
                                 <h4 class="card-title">Massage</h4>
@@ -346,6 +372,11 @@
             </div>
         </div>
     </div>-->
+
+    <!-- Parallax Bild Kuschel -->
+    <div id="parabild_kuschel" class="top-buffer">
+        <div class="parallax kuschel"></div>
+    </div>
 
     <!-- Kontakt -->
     <div id="kontakt" class="top-buffer">
@@ -395,12 +426,12 @@
         <div class="social-networks">
         </div>
         <div class="footer-copyright">
-            <img class="logo" itemprop="logo" class="img-responsive" src="/images/logo_w.svg" alt="Logo pferde.fit">
+            <img itemprop="logo" class="center-block img-responsive" src="/images/logo_w.svg" alt="Logo pferde.fit">
             <p>© 2017 Poschenrieder - created by <a href="https://www.siluri.de">siluri.de</a></p>
         </div>
     </footer>
 
-    <link rel="stylesheet" type="text/css" href="build/style.css" data-minify="1" defer/>
+    <link rel="stylesheet" type="text/css" href="build/style.css" data-minify="1"/>
     <script src="build/bundle.js"></script>
 </body>
 </html>

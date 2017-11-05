@@ -4,16 +4,37 @@ body, html {
   height: 100%;
 }
 
+.imgkreis {
+  border-radius: 50%;
+}
+
 .parallax {
   height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  &.wiese{
-    background-image: url("/images/wiese.jpg");
+  &.tunnel{
+    background-image: url("/images/pferde_tunnel-min.jpg");
     height: 380px;
   }
+  &.kuschel{
+    background-image: url("/images/kuschel-min.jpg");
+    height: 380px;
+  }
+  &.blick{
+    background-image: url("/images/tieferblick-min.jpg");
+    height: 450px;
+  }
+  &.partner{
+    background-image: url("/images/partner-min.jpg");
+    height: 450px;
+  }
+}
+
+img.profil {
+  max-height:300px;
+  margin-bottom: 30px;
 }
 
 .container {
@@ -76,6 +97,10 @@ body, html {
   margin-bottom: 30px;
   margin-top: 30px;
   background-color: white;
+  img {
+    border-radius: 10%;
+    max-height: 200px;
+  }
   .glyphicon {
     font-size: 40px;
   }
@@ -116,10 +141,8 @@ body, html {
 #myFooter {
   background-color: lightgray;
   color:white;
-  .logo {
-    margin-top: 13px;
-    margin-bottom: 5px;
-    max-width: 90px;
+  img {
+    max-height: 50px;
   }
   .container {
     background-color: transparent;
