@@ -1,0 +1,290 @@
+$lila: #8B185D;
+
+body, html {
+  height: 100%;
+}
+
+.leistung_mobilisation, .leistung_blutegel, .leistung_akkupressur, .leistung_dehnung, .leistung_dry-needling,
+.leistung_jack, .leistung_massage {
+  display: inline-block;
+  background: url('/images/leistung/leistung.jpeg') no-repeat;
+  overflow: hidden; text-indent: -9999px; text-align: left;
+}
+
+.leistung_dry-needling { background-position: -0px -0px; width: 323px; height: 200px; }
+.leistung_jack { background-position: -0px -200px; width: 300px; height: 200px; }
+.leistung_massage { background-position: -0px -400px; width: 300px; height: 200px; }
+.leistung_mobilisation { background-position: -0px -600px; width: 300px; height: 200px; }
+.leistung_dehnung { background-position: -0px -800px; width: 256px; height: 200px; }
+.leistung_akkupressur { background-position: -0px -1000px; width: 255px; height: 200px; }
+.leistung_blutegel { background-position: -0px -1200px; width: 235px; height: 200px; }
+
+.leistung_leer {
+  height: 200px;
+  width: 300px;
+}
+
+.imgkreis {
+  border-radius: 50%;
+}
+
+.parallax {
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &.para_tunnel{
+    background-image: url("/images/parallax/tunnel.jpg");
+    height: 380px;
+  }
+  &.para_kuschel{
+    background-image: url("/images/parallax/kuschel.jpg");
+    height: 380px;
+  }
+  &.para_idni{
+    background-image: url("/images/parallax/idni.jpg");
+    height: 380px;
+  }
+  &.para_tieferblick{
+    background-image: url("/images/parallax/tieferblick.jpg");
+    height: 450px;
+  }
+  &.para_partner{
+    background-image: url("/images/parallax/partner.jpg");
+    height: 450px;
+  }
+  &.para_behandlung{
+    background-image: url("/images/parallax/behandlung.jpg");
+    height: 450px;
+  }
+}
+
+img.profil {
+  max-height:300px;
+  margin-bottom: 30px;
+}
+
+.container {
+  h1, h2 {
+    color: $lila;
+  }
+}
+
+.navbar-default {
+  background-color: white;
+  .navbar-toggle {
+    border-color: transparent;
+  }
+  .navbar-brand {
+    color: $lila;
+    font-weight: bold;
+  }
+  .navbar-nav>li>a:hover {
+    color: $lila;
+    font-weight: bold;
+  }
+}
+
+.spacer-navbar {
+  height: 50px;
+}
+
+#logo {
+  position: relative;
+  background: url("/images/paper.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  img {
+    max-width: 1024px;
+    margin: auto;
+  }
+}
+
+.top-buffer {
+  margin-top: 50px;
+}
+
+#leistungen.container, #kontakt .container {
+  background-color: transparent;
+}
+
+#verena .person {
+  > div {
+    margin-right: 10px;
+  }
+  a {
+    &:hover {
+      text-decoration: none !important;
+    }
+  }
+}
+
+.card {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  background-color: white;
+  img {
+    border-radius: 10%;
+    max-height: 200px;
+  }
+  .glyphicon {
+    font-size: 40px;
+  }
+  .card-body {
+    .card-title {
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card-text{
+      height: 100px;
+      text-align: initial;
+      margin: auto;
+      max-width: 300px;
+    }
+  }
+  .card-footer {
+    div {
+      text-align: initial;
+      padding-top: 20px;
+      p {
+        text-align: justify;
+      }
+    }
+  }
+}
+
+#preise {
+  .kilometer {
+    text-align: right;
+    p {
+      font-size: 10px;
+    }
+  }
+}
+
+#myFooter {
+  background-color: lightgray;
+  color:white;
+  img {
+    max-height: 50px;
+  }
+  .container {
+    background-color: transparent;
+    a{
+      margin-right: 5px;
+      margin-left: 5px;
+      color: #383737;
+      padding: 10px;
+      transition: 0.2s;
+    }
+    a:hover{
+      text-decoration: none;
+    }
+  }
+  .footer-copyright{
+    background-color: #383737;
+    padding-top:15px;
+    padding-bottom:3px;
+    text-align: center;
+    p{
+      margin:10px;
+      color: #ccc;
+    }
+  }
+  ul{
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+
+  }
+
+  h5{
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+  }
+
+  a{
+    color:#d2d1d1;
+    text-decoration: none;
+  }
+  .myCols{
+    text-align: center;
+  }
+
+  .social-networks{
+    padding-top: 4px;
+    background-color: $lila;
+  }
+  a:hover, a:focus{
+    text-decoration: none;
+    color:white;
+  }
+}
+
+#myFooter .facebook:hover{
+  color:#0077e2;
+}
+
+#myFooter .google:hover{
+  color:#ef1a1a;
+}
+
+#myFooter .twitter:hover{
+  color: #00aced;
+}
+
+@media screen and (max-width: 767px){
+  #myFooter {
+    text-align: center;
+  }
+}
+
+
+#social {
+  div.row .fa{
+    font-size: 50px;
+  }
+}
+.fa-facebook, .fa-facebook-square {
+  color: #3b5998
+}
+.fa-twitter, .fa-twitter-square {
+  color: #00aced
+}
+.fa-google-plus, .fa-google-plus-square {
+  color: #dd4b39
+}
+.fa-youtube, .fa-youtube-play, .fa-youtube-square {
+  color: #bb0000
+}
+.fa-instagram {
+  color: #cd486b;
+}
+
+.streifen {
+  background-color: $lila;
+  height: 3px;
+  width: 100%;
+}
+
+.social_btns {
+  display: flex;
+  justify-content: flex-end;
+  a {
+    padding-right: 3%;
+    padding-left: 3%;
+  }
+}
+
+@media screen and (max-width:640px) {
+  .parallax, #logo{
+    background-attachment: initial !important;
+    background-position: center center !important;
+  }
+}

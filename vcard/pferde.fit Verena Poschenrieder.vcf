@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:2.1
+N;CHARSET=ISO-8859-1:Poschenrieder;Verena;;;Verena Poschenrieder
+FN;CHARSET=ISO-8859-1: Verena Poschenrieder
+ORG;CHARSET=ISO-8859-1:pferde.fit
+TITLE;CHARSET=ISO-8859-1:Pferdephysiotherapeutin
+URL;type=WORK;CHARSET=ISO-8859-1:http://pferde.fit
+EMAIL;CHARSET=ISO-8859-1;type=WORK;type=PREF:verena@pferde.fit
+TEL;type=CELL;type=VOICE:0170 486 4779
+END:VCARD
