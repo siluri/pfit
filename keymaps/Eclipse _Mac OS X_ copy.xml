@@ -7,6 +7,10 @@
   <action id="FindInPath">
     <keyboard-shortcut first-keystroke="meta h" />
   </action>
+  <action id="FindUsages">
+    <keyboard-shortcut first-keystroke="shift meta g" />
+    <keyboard-shortcut first-keystroke="meta g" />
+  </action>
   <action id="Git.Reword.Commit">
     <keyboard-shortcut first-keystroke="shift f6" />
   </action>
