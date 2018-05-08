@@ -4,6 +4,8 @@
     <option name="USE_CHAINED_CALLS_GROUP_INDENTS" value="true" />
   </JSCodeStyleSettings>
   <MarkdownNavigatorCodeStyleSettings>
+    <option name="WRAP_ON_TYPING" value="0" />
+    <option name="SMART_EDIT_TABLES" value="true" />
     <option name="RIGHT_MARGIN" value="120" />
   </MarkdownNavigatorCodeStyleSettings>
   <codeStyleSettings language="JavaScript">
