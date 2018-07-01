@@ -3,6 +3,7 @@
     <extensionMap>
       <mapping ext="rain" type="HTML" />
       <mapping pattern=".env.dev" type="PLAIN_TEXT" />
+      <mapping pattern="hashtags" type="PLAIN_TEXT" />
       <mapping pattern=".env.example" type="PLAIN_TEXT" />
       <mapping ext="vcf" type="PLAIN_TEXT" />
     </extensionMap>
