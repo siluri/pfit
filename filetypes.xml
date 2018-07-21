@@ -2,9 +2,10 @@
   <component name="FileTypeManager" version="17">
     <extensionMap>
       <mapping ext="rain" type="HTML" />
+      <mapping pattern=".env.example" type="PLAIN_TEXT" />
+      <mapping pattern="Todo" type="PLAIN_TEXT" />
       <mapping pattern=".env.dev" type="PLAIN_TEXT" />
       <mapping pattern="hashtags" type="PLAIN_TEXT" />
-      <mapping pattern=".env.example" type="PLAIN_TEXT" />
       <mapping ext="vcf" type="PLAIN_TEXT" />
     </extensionMap>
   </component>
